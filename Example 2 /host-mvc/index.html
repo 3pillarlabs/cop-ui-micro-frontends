@@ -1,40 +1,54 @@
 <html>
-<head>
-  <title>Dog adopter</title>
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px;
-  padding: 0px;
-}
+  <head>
+    <title>Dog adopter</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      html {
+        height: 100%;
+      }
+      .content {
+        padding: 1em;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      .html-section {
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vue.js Code -->
+    <my-header></my-header>
 
-.content {
-  padding: 1em;
-  display: grid;
-  grid-template-columns: 70% 30%;
-  column-gap: 1em;
-}
-</style>
-</head>
-<body>
-  <my-header></my-header>
-  <div class="content">
-    <div>
-      <my-product-image>
-      </my-product-image>
-      <my-product-description>
-      </my-product-description>
+    <!-- HTML CODE -->
+    <div class="content">
+      <div class="html-section">
+        <my-product-image> </my-product-image>
+        <my-product-description> </my-product-description>
+      </div>
+      
+      <!-- React.js code -->
+      <my-buy-tools></my-buy-tools>
     </div>
-    <my-buy-tools></my-buy-tools>
-  </div>
-  <my-footer></my-footer>
 
-  <script src="https://unpkg.com/vue"></script>
-  <script src="/components/buy-tools-dumb/build/static/js/main.js"></script>
-  <script src="/components/header-dumb/dist/my-header.min.js"></script>
-  <script src="/components/footer/dist/my-footer.min.js"></script>
-  <script src="/components/product-image-dumb.js"></script>
-  <script src="/components/product-description-dumb.js"></script>
-  <script src="/host-mvc/controller.js"></script>
-</body>
+    <!-- vue.js code -->
+    <my-footer></my-footer>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/components/buy-tools-dumb/build/static/js/main.js"></script>
+    <script src="/components/header-dumb/dist/my-header.min.js"></script>
+    <script src="/components/footer/dist/my-footer.min.js"></script>
+    <script src="/components/product-image-dumb.js"></script>
+    <script src="/components/product-description-dumb.js"></script>
+    <script src="/host-mvc/controller.js"></script>
+  </body>
 </html>
