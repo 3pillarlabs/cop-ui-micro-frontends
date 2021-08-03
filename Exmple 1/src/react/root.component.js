@@ -21,7 +21,7 @@ const App = (props) => {
    
       <div className='form-container'>
         <h1>
-          React <span className='text-primary'>From</span>
+          React <span className='text-primary'>Form</span>
         </h1>
         <form onSubmit={onSubmit}>
           <div className='form-group'>
